@@ -1,0 +1,114 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(228,238,167);
+    background: linear-gradient(0deg, rgba(228,238,167,1) 0%, rgba(122,214,225,1) 100%);
+    color: #333;
+  }
+.img{
+  width: 70%;
+  margin-left: 10%;
+  margin-top: -30%;
+}
+  .container {
+    transition: all 0.3s ease-in-out;
+    max-width: 90%; 
+    text-align: center;
+    padding: 20px 30px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    background: rgb(228,238,167);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 90%;
+  }
+
+  h1 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: rgb(8, 184, 204);
+  }
+
+  input {
+    padding: 12px;
+    width: 70%;
+    margin-bottom: 15px;
+    border: 1px solid #cbd5e0;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+
+  button {
+    padding: 10px 15px;
+    border: none;
+   background-color:  rgb(8, 184, 204);
+    color: white;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  button:hover {
+    background-color: #2b6cb0;
+  }
+
+  .container:hover {
+    transform: scale(1.1);
+    background-color: #eaf17b; 
+  }
+  .result {
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #2d3748;
+  }
+
+  .error {
+    color: #e53e3e;
+    margin-top: 10px;
+    font-size: 0.9rem;
+  }
+
+  .text {
+     color: #2d3748;
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+  @keyframes myAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  div {
+    animation: myAnimation 1s ease-in-out;
+  }
+  @media (max-width: 768px) {
+    .img {
+      width: 80%;
+      margin-top: -35%;
+    }
+  
+    .container {
+      padding: 20px 15px;
+    }
+  
+    h1 {
+      font-size: 1.2rem;
+    }
+  
+    input {
+      width: 50%;
+    }
+  }
